@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* color: #fff; */
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: #c62a88;
+    overflow: hidden;
+}
+#nav{
+     width: 100%;
+     height: 45px;
+     background-color: #590995;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 30px;
+}
+#nav a{
+    text-decoration: none;
+    color: #fff;
+}
+#nav a:hover{
+    border-bottom: 2px solid white;
+}
+.content-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background-color: #c62a88;
+}
+#home-box{
+    width: 70%;
+    height: 70%;
+    background-color: #fff;
+    box-shadow: 10px 10px 20px rgba(89, 9, 149, 0.7);
+    margin: 35px auto;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+}
+.btn{
+    width: 40%;
+    height: 35px;
+    background-color: #c62a88;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 550;
+    box-shadow: 10px 10px 20px rgba(89, 9, 149, 0.7);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#home-box a{
+   text-decoration: none;
+}
+.btn:hover{
+    transform: scale(1.1);
+    transition-duration: 0.9s;
+}
+
+
+.project-area{
+     background-color: #fff;
+     width: 45%;
+     /* height: 60%; */
+     border-radius: 8px;
+     box-shadow: 10px 10px 20px rgba(89, 9, 149, 0.7);
+     padding: 5px;
+     /* display: flex;
+     flex-direction: column;
+     align-items: center; */
+}
+.project-area h2{
+    text-align: center;
+}
+h2{
+    border-bottom: 2px solid #03c4a1;
+}
+.projects{
+  margin-top:30px;
+  padding-left: 20px;
+}
+.projects label{
+    margin-left: 8px;
+}
+.projects .demo{
+    margin-left: 8px;
+}
+.projects .code{
+    margin-left: 8px;
+}
+#progress-area{
+    background-color: #fff;
+    width: 30%;
+    /* height: 60%; */
+    border-radius: 8px;
+    box-shadow: 10px 10px 20px rgba(89, 9, 149, 0.7);
+    color:black;
+    text-align: center;
+    padding: 5px;
+}
+.progress-bar {
+    margin-top: 20px;
+    width: 100%;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: #03c4a1;
+    transition: width 0.3s ease;
+}
+
+.progress-label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 750px) {
+    .content-box{
+        flex-direction: column;
+        justify-content: start;
+        gap: 20px;
+    }
+    .project-area{
+        width: 80%;
+    }
+    #progress-area{
+        width: 70%;
+    }
+    
+}
