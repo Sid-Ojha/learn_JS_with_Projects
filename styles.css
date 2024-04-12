@@ -43,7 +43,7 @@ html,body{
 }
 #home-box{
     width: 70%;
-    height: 70%;
+    /* height: 60%; */
     background-color: #fff;
     box-shadow: 10px 10px 20px rgba(89, 9, 149, 0.7);
     margin: 35px auto;
@@ -151,4 +151,10 @@ h2{
         width: 70%;
     }
     
+}
+@media only screen and (max-width:400px){
+    #home-box{
+        width: 100%;
+    
+   }
 }
